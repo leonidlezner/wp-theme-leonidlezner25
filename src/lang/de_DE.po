@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-02-24 22:57+0100\n"
+"PO-Revision-Date: 2024-02-24 22:58+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: _;get_lang;lang\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+
+#: functions.php:47
+msgid "Header Menu"
+msgstr "Header Menu"
+
+#: functions.php:48
+msgid "Footer Menu"
+msgstr "Footer Menu"
+
+#: src/layout/header.php:29 src/views/listing.php:77
+msgid "Search"
+msgstr "Suche"
+
+#: src/layout/header.php:33 src/views/listing.php:78
+msgid "Search button"
+msgstr "Suchen"
+
+#: src/partials/comment_walker.php:17
+#, php-format
+msgid "%s at %s"
+msgstr "%s am %s"
+
+#: src/partials/comment_walker.php:25
+msgid "Your comment is awaiting moderation."
+msgstr "Dein Kommentar wartet auf Moderation."
+
+#: src/partials/comments.php:23
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: src/partials/more_category_posts.php:20
+msgid "Related posts"
+msgstr "Ähnliche Beiträge"
+
+#: src/partials/post_books.php:9
+msgid "Related Books"
+msgstr "Passende Bücher"
+
+#: src/posts/meta.php:10
+#, php-format
+msgid "%s in"
+msgstr "%s in"
+
+#: src/views/listing.php:8
+msgid "Search results for"
+msgstr "Suchergebnisse für"
+
+#: src/views/listing.php:24
+msgid "Previous"
+msgstr "Zurück"
+
+#: src/views/listing.php:25
+msgid "Next"
+msgstr "Weiter"
+
+#: src/views/listing.php:41
+msgid "Categories"
+msgstr "Kategorien"
+
+#: src/views/listing.php:70
+msgid "No posts found"
+msgstr "Keine Beiträge gefunden"
+
+#: src/views/listing.php:75
+msgid "Try to search for some other keywords"
+msgstr "Bitte nach anderen Begriffen suchen"
+
+#: src/views/single.php:23
+msgid "Comments"
+msgstr "Kommentare"

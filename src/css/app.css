@@ -1,0 +1,76 @@
+@import "_pagination.css";
+@import "_comments.css";
+@import "_content.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#comments- * {
+  outline: 1px dashed red;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+/* ----- Header Menu ----- */
+
+@media (max-width: 1023px) {
+  #header-menu {
+    @apply shadow-md text-center;
+  }
+
+  #header-menu .menu-item a {
+    @apply text-color4 hover:text-white border-t border-color1 block;
+    padding: 0.5em 0;
+  }
+
+  #header-menu .current-menu-item a {
+    @apply text-color5 font-bold;
+  }
+}
+
+@media (min-width: 1024px) {
+  #header-menu {
+    @apply flex space-x-4 justify-center font-bold;
+  }
+
+  #header-menu .menu-item a {
+    @apply text-color4 hover:text-white;
+  }
+
+  #header-menu .current-menu-item a {
+    @apply text-color5 hover:text-color5 relative;
+  }
+
+  #header-menu .current-menu-item a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    bottom: -4px;
+    width: 100%;
+    @apply bg-color5 rounded-md;
+  }
+}
+
+/* ----- Post Card ----- */
+
+.post-meta a:hover {
+  @apply text-color2 underline;
+}
+
+/* ----- Footer Menu ----- */
+
+#footer-menu {
+  @apply flex space-x-4;
+}
+
+#footer-menu .menu-item {
+  @apply text-color4 hover:text-white;
+}
+
+#footer-menu .current-menu-item {
+  @apply text-color5 hover:text-white font-bold;
+}

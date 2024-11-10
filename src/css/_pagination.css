@@ -1,0 +1,18 @@
+.pagination {
+  @apply my-5;
+}
+
+.nav-links {
+  @apply flex justify-center space-x-2;
+}
+
+.nav-links .page-numbers {
+  @apply bg-color5 text-color2 rounded-md;
+  display: block;
+  padding: 0.2em 1em;
+}
+
+.nav-links a.page-numbers:hover,
+.nav-links span.page-numbers {
+  @apply bg-color4 text-color2;
+}

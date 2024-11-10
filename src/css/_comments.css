@@ -1,0 +1,57 @@
+.comment-form {
+  @apply space-y-5;
+}
+
+.comment-reply-title {
+  @apply text-2xl font-heading text-color4 mb-3;
+}
+
+.comment-form label {
+  @apply block mb-1 text-color2;
+}
+
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input,
+.comment-form textarea {
+  @apply border text-color1 bg-white rounded-md px-3 py-2 border-color4 focus:ring-0 focus:outline-none focus:border-color1 shadow-inner;
+}
+
+.comment-form textarea {
+  @apply w-full;
+}
+
+.comment-form-cookies-consent {
+  @apply flex pt-2;
+}
+
+#wp-comment-cookies-consent {
+  @apply mt-1 mr-2 rounded-md p-2;
+}
+
+.form-submit input {
+  @apply rounded-md px-5 py-1 text-color1 bg-color4 hover:bg-color5 cursor-pointer hover:outline hover:outline-1 hover:outline-color4;
+}
+
+.comment #respond {
+  @apply p-7 border border-color4 rounded-md my-5;
+}
+
+@media (max-width: 768px) {
+  .comment #respond {
+    @apply p-2;
+  }
+}
+
+.comment-reply-link,
+.comment-edit-link {
+  @apply rounded-md px-5 py-1 bg-color5 hover:bg-white hover:outline hover:outline-1 hover:outline-color4 block text-color1;
+}
+
+#reply-title small {
+  display: block;
+}
+
+#cancel-comment-reply-link {
+  @apply font-sans text-sm inline-block rounded-md mt-2 px-2 py-1 bg-red-200 hover:bg-red-300 text-red-500;
+}
