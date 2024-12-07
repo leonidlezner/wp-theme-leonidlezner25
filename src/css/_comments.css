@@ -29,8 +29,10 @@
   @apply mt-1 mr-2 rounded-md p-2;
 }
 
-.form-submit input {
-  @apply rounded-md px-5 py-1 text-color1 bg-color4 hover:bg-color5 cursor-pointer hover:outline hover:outline-1 hover:outline-color4;
+.form-submit input,
+.comment-reply-link,
+.comment-edit-link {
+  @apply rounded-md px-5 py-1 text-color1 bg-color4 hover:bg-color2 hover:text-color4 cursor-pointer;
 }
 
 .comment #respond {
@@ -43,10 +45,11 @@
   }
 }
 
+/* 
 .comment-reply-link,
 .comment-edit-link {
   @apply rounded-md px-5 py-1 bg-color5 hover:bg-white hover:outline hover:outline-1 hover:outline-color4 block text-color1;
-}
+} */
 
 #reply-title small {
   display: block;

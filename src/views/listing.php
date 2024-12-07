@@ -27,7 +27,7 @@
       ?>
 
       <?php if ($pagination) : ?>
-        <div class="col-span-full lg:col-span-5 border-t border-t-color5">
+        <div class="col-span-full lg:col-span-5">
           <?php echo $pagination; ?>
         </div>
       <?php endif; ?>

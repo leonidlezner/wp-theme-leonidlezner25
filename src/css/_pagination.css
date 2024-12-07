@@ -14,5 +14,5 @@
 
 .nav-links a.page-numbers:hover,
 .nav-links span.page-numbers {
-  @apply bg-color4 text-color2;
+  @apply bg-color2 text-color4;
 }
