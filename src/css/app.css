@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.x {
+  border: 1px solid red;
+}
+
 #comments- * {
   outline: 1px dashed red;
 }

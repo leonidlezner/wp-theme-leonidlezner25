@@ -1,12 +1,12 @@
 <header class="pb-10 lg:pb-12">
-  <div class="bg-color1 relative h-16 lg:h-28 border-b-8 border-color5" x-data="{ open: false }" @click.outside="open = false" @resize.window="open = false">
-    <?php get_template_part("src/layout/container", "begin", ['class' => 'h-full']); ?>
+  <div class="bg-color1" x-data="{ open: false }" @click.outside="open = false" @resize.window="open = false">
+    <?php get_template_part("src/layout/container", "begin", ['class' => 'flex justify-between']); ?>
 
-    <a href="<?php echo esc_url(home_url("/")); ?>">
-      <img src="<?php echo get_image_url("logo.png"); ?>" class="h-20 lg:h-32 absolute top-2 lg:top-3 z-20" alt="<?php bloginfo("name"); ?>" />
+    <a href="<?php echo esc_url(home_url("/")); ?>" class="w-32 py-3">
+      <img src="<?php echo get_image_url("logo_transparent.png"); ?>" alt="<?php bloginfo("name"); ?>" />
     </a>
 
-    <div class="h-full flex items-center justify-end lg:hidden">
+    <div class="flex items-center justify-end lg:hidden">
       <button class="space-y-[5px] group" @click="open = !open">
         <span class="h-[5px] w-7 bg-color4 group-hover:bg-white block" x-bind:class="open ? 'bg-white' : ''"></span>
         <span class="h-[5px] w-7 bg-color4 group-hover:bg-white block" x-bind:class="open ? 'bg-white' : ''"></span>
@@ -14,7 +14,7 @@
       </button>
     </div>
 
-    <div x-cloak class="lg:h-full lg:pl-32 items-center max-lg:flex-col-reverse flex lg:justify-between max-lg:space-y-reverse max-lg:space-y-4 max-lg:bg-color2 max-lg:absolute left-0 right-0 top-14 z-10 max-lg:pt-7" :class="{ 'max-lg:hidden': !open }">
+    <div x-cloak class="flex-1 items-center max-lg:flex-col-reverse flex lg:justify-between max-lg:space-y-reverse max-lg:space-y-4 max-lg:bg-color2 max-lg:absolute left-0 right-0 top-[4.2em] z-10 max-lg:pt-4" :class="{ 'max-lg:hidden': !open }">
       <div class="max-lg:w-full lg:flex-1">
         <?php wp_nav_menu([
           "theme_location" => "header-menu",
