@@ -31,7 +31,7 @@ class Custom_Comment_Walker extends Walker_Comment
                             <?php comment_text(); ?>
                         </div>
 
-                        <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-2">
                             <?php comment_reply_link(
                                 array_merge($args, [
                                     "add_below" => "div-comment-mc",

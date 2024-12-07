@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" href="<?php echo get_versioned_asset('images/apple-touch-icon.png') ?>">
 
     <style>
-        @font-face {
+        /* @font-face {
             font-family: "Roboto";
             src: url('<?php echo get_font_url("Roboto/Roboto-Regular.ttf") ?>') format("truetype");
             font-weight: normal;
@@ -29,7 +29,7 @@
             font-family: "Roboto";
             src: url('<?php echo get_font_url("Roboto/Roboto-Medium.ttf") ?>') format("truetype");
             font-weight: 600;
-        }
+        } */
 
         @font-face {
             font-family: "Nunito";

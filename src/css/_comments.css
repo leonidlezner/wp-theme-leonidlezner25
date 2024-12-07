@@ -29,9 +29,7 @@
   @apply mt-1 mr-2 rounded-md p-2;
 }
 
-.form-submit input,
-.comment-reply-link,
-.comment-edit-link {
+.form-submit input {
   @apply rounded-md px-5 py-1 text-color1 bg-color4 hover:bg-color2 hover:text-color4 cursor-pointer;
 }
 
@@ -45,11 +43,10 @@
   }
 }
 
-/* 
 .comment-reply-link,
 .comment-edit-link {
-  @apply rounded-md px-5 py-1 bg-color5 hover:bg-white hover:outline hover:outline-1 hover:outline-color4 block text-color1;
-} */
+  @apply rounded-md px-3 py-0.5 text-color1 border border-color4 hover:bg-color2 hover:text-color4 cursor-pointer;
+}
 
 #reply-title small {
   display: block;
