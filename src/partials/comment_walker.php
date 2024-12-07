@@ -12,37 +12,38 @@ class Custom_Comment_Walker extends Walker_Comment
                 </div>
             </div>
 
-            <div class="flex-1" id="div-comment-<?php comment_ID(); ?>">
-                <div class="mb-2 text-color2 font-bold"><?php printf(
-                                                            get_lang("%s at %s"),
-                                                            get_comment_author_link(),
-                                                            get_comment_date()
-                                                        ); ?></div>
+            <div class="flex-1 space-y-4" id="div-comment-<?php comment_ID(); ?>">
+                <div>
+                    <div class="mb-2 text-color2 font-bold"><?php printf(
+                                                                get_lang("%s at %s"),
+                                                                get_comment_author_link(),
+                                                                get_comment_date()
+                                                            ); ?></div>
 
-                <div id="div-comment-mc-<?php comment_ID(); ?>">
-                    <?php if ("0" == $comment->comment_approved) : ?>
-                        <p class="text-xs text-red-500"><?php lang(
-                                                            "Your comment is awaiting moderation."
-                                                        ); ?></p>
-                    <?php endif; ?>
+                    <div id="div-comment-mc-<?php comment_ID(); ?>">
+                        <?php if ("0" == $comment->comment_approved) : ?>
+                            <p class="text-xs text-red-500"><?php lang(
+                                                                "Your comment is awaiting moderation."
+                                                            ); ?></p>
+                        <?php endif; ?>
 
-                    <div class="prose prose-leonidlezner mb-2">
-                        <?php comment_text(); ?>
-                    </div>
+                        <div class="prose prose-leonidlezner mb-2">
+                            <?php comment_text(); ?>
+                        </div>
 
-                    <div class="flex items-center space-x-4">
-                        <?php comment_reply_link(
-                            array_merge($args, [
-                                "add_below" => "div-comment-mc",
-                                "depth" => $depth,
-                                "max_depth" => $args["max_depth"],
-                            ])
-                        ); ?>
+                        <div class="flex items-center space-x-4">
+                            <?php comment_reply_link(
+                                array_merge($args, [
+                                    "add_below" => "div-comment-mc",
+                                    "depth" => $depth,
+                                    "max_depth" => $args["max_depth"],
+                                ])
+                            ); ?>
 
-                        <?php edit_comment_link(__("Edit")); ?>
+                            <?php edit_comment_link(__("Edit")); ?>
+                        </div>
                     </div>
                 </div>
-
             <?php
         }
 
