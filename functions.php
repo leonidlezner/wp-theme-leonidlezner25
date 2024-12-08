@@ -76,6 +76,7 @@ function get_all_books()
         'orderby' => 'title',
         'post_type' => 'literature_book',
         'order' => 'ASC',
+        'posts_per_page' => -1,
     ]);
 
     return $books;
