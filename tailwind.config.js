@@ -18,19 +18,19 @@ module.exports = {
         leonidlezner: {
           css: {
             h1: {
-              fontFamily: "Nunito",
+              fontFamily: "Roboto",
               fontWeight: "bold",
             },
             h2: {
-              fontFamily: "Nunito",
+              fontFamily: "Roboto",
               fontWeight: "bold",
             },
             h3: {
-              fontFamily: "Nunito",
+              fontFamily: "Roboto",
               fontWeight: "bold",
             },
             h4: {
-              fontFamily: "Nunito",
+              fontFamily: "Roboto",
               fontWeight: "bold",
             },
             strong: {
@@ -48,7 +48,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ["Nunito", "sans"],
-      heading: ["Nunito", "sans"],
+      heading: ["Roboto", "sans"],
     },
   },
   variants: {

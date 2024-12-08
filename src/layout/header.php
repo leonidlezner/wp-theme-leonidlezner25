@@ -2,7 +2,7 @@
   <div class="bg-color1" x-data="{ open: false }" @click.outside="open = false" @resize.window="open = false">
     <?php get_template_part("src/layout/container", "begin", ['class' => 'flex justify-between']); ?>
 
-    <a href="<?php echo esc_url(home_url("/")); ?>" class="w-32 py-3">
+    <a href="<?php echo esc_url(home_url("/")); ?>" class="w-32 xl:w-36 py-3">
       <img src="<?php echo get_image_url("logo_transparent.png"); ?>" alt="<?php bloginfo("name"); ?>" />
     </a>
 

@@ -7,7 +7,7 @@
   </div>
 
   <div class="space-y-3 col-span-full md:col-span-5 lg:col-span-4">
-    <?php the_title('<h2 class="font-heading font-bold text-4xl"><a href="' . esc_url(get_permalink()) . '" class="text-color3 hover:text-color2 hover:underline" rel="bookmark">', '</a></h2>'); ?>
+    <?php the_title('<h2 class="font-heading font-bold text-3xl"><a href="' . esc_url(get_permalink()) . '" class="text-color3 hover:text-color2 hover:underline" rel="bookmark">', '</a></h2>'); ?>
 
     <?php get_template_part('src/posts/meta'); ?>
 

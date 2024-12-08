@@ -34,8 +34,6 @@
     </div>
 
     <div class="col-span-7 lg:col-span-2 lg:border-l border-color5">
-
-
       <div class="lg:pl-7">
         <div>
           <h2 class="text-xl text-color2 font-bold font-heading mb-3"><?php lang("Categories"); ?></h2>

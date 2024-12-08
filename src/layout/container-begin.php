@@ -1,1 +1,1 @@
-<div class="m-auto max-w-5xl xl:max-w-6xl px-2 <?php echo (isset($args['class']) ? $args['class'] : "") ?>">
+<div class="m-auto max-w-5xl xl:max-w-6xl px-4 lg:px-2 xl:px-0 <?php echo (isset($args['class']) ? $args['class'] : "") ?>">
