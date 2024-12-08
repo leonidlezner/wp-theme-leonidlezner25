@@ -74,7 +74,8 @@ function get_all_books()
 {
     $books = get_posts([
         'orderby' => 'title',
-        'post_type' => 'literature_book'
+        'post_type' => 'literature_book',
+        'order' => 'ASC',
     ]);
 
     return $books;
