@@ -3,16 +3,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        color1: "#131313",
+        color1: "#171717",
         color2: "#333333",
-        color3: "#131313",
+        color3: "#333333",
         color4: "#faca13",
         color5: "#faca13",
-        /*         color1: "#2F324E",
-        color2: "#444767",
-        color3: "#72779E",
-        color4: "#EBB481",
-        color5: "#F9E5D2", */
       },
       typography: ({ theme }) => ({
         leonidlezner: {
