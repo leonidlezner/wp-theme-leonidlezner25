@@ -1,7 +1,8 @@
 <?php
 $recent_comments = get_comments(array(
   'number'      => 5,
-  'status'      => 'approve'
+  'status'      => 'approve',
+  'type'        => 'comment'
 ));
 
 if ($recent_comments) : ?>
