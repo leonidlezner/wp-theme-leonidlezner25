@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-02-24 22:57+0100\n"
-"PO-Revision-Date: 2024-02-24 22:58+0100\n"
+"POT-Creation-Date: 2024-12-19 20:44+0100\n"
+"PO-Revision-Date: 2024-12-19 20:44+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-KeywordsList: _;get_lang;lang\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -23,20 +23,24 @@ msgstr "Header Menu"
 msgid "Footer Menu"
 msgstr "Footer Menu"
 
-#: src/layout/header.php:29 src/views/listing.php:77
+#: src/layout/header.php:29 src/views/listing.php:57
 msgid "Search"
 msgstr "Suche"
 
-#: src/layout/header.php:33 src/views/listing.php:78
+#: src/layout/header.php:33 src/views/listing.php:58
 msgid "Search button"
 msgstr "Suchen"
 
-#: src/partials/comment_walker.php:17
+#: src/partials/categories-list.php:3
+msgid "Categories"
+msgstr "Kategorien"
+
+#: src/partials/comment_walker.php:18
 #, php-format
 msgid "%s at %s"
 msgstr "%s am %s"
 
-#: src/partials/comment_walker.php:25
+#: src/partials/comment_walker.php:26
 msgid "Your comment is awaiting moderation."
 msgstr "Dein Kommentar wartet auf Moderation."
 
@@ -44,11 +48,20 @@ msgstr "Dein Kommentar wartet auf Moderation."
 msgid "Comments are closed."
 msgstr "Kommentare sind geschlossen."
 
+#: src/partials/last-comments.php:10
+msgid "Last comments"
+msgstr "Letzte Kommentare"
+
+#: src/partials/last-comments.php:24
+#, php-format
+msgid "%s on %s"
+msgstr "%s auf %s"
+
 #: src/partials/more_category_posts.php:20
 msgid "Related posts"
 msgstr "Ähnliche Beiträge"
 
-#: src/partials/post_books.php:9
+#: src/partials/post_books.php:5
 msgid "Related Books"
 msgstr "Passende Bücher"
 
@@ -56,6 +69,10 @@ msgstr "Passende Bücher"
 #, php-format
 msgid "%s in"
 msgstr "%s in"
+
+#: src/views/books.php:27 src/views/single.php:29
+msgid "Comments"
+msgstr "Kommentare"
 
 #: src/views/listing.php:8
 msgid "Search results for"
@@ -69,18 +86,10 @@ msgstr "Zurück"
 msgid "Next"
 msgstr "Weiter"
 
-#: src/views/listing.php:41
-msgid "Categories"
-msgstr "Kategorien"
-
-#: src/views/listing.php:70
+#: src/views/listing.php:50
 msgid "No posts found"
 msgstr "Keine Beiträge gefunden"
 
-#: src/views/listing.php:75
+#: src/views/listing.php:55
 msgid "Try to search for some other keywords"
 msgstr "Bitte nach anderen Begriffen suchen"
-
-#: src/views/single.php:23
-msgid "Comments"
-msgstr "Kommentare"
