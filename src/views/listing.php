@@ -1,17 +1,17 @@
 <?php get_template_part('src/layout/page', 'begin'); ?>
 
-<?php if (is_category()) : ?>
-  <h1 class="text-3xl font-heading font-bold mb-12 text-color2"><?php echo single_cat_title('', false); ?></h1>
-<?php endif; ?>
-
-<?php if (is_search()) : ?>
-  <h1 class="text-3xl font-heading font-bold mb-12 text-color2"><?php lang('Search results for'); ?> "<?php echo get_search_query(); ?>"</h1>
-<?php endif; ?>
-
-
 <?php if (have_posts()) : ?>
   <div class="grid grid-cols-7 gap-7">
     <div class="col-span-7 lg:col-span-5 space-y-12">
+
+      <?php if (is_category()) : ?>
+        <h1 class="text-3xl font-heading font-bold mb-12 text-color2"><?php echo single_cat_title('', false); ?></h1>
+      <?php endif; ?>
+
+      <?php if (is_search()) : ?>
+        <h1 class="text-3xl font-heading font-bold mb-12 text-color2"><?php lang('Search results for'); ?> "<?php echo get_search_query(); ?>"</h1>
+      <?php endif; ?>
+
       <!-- Listing of posts -->
       <?php while (have_posts()) : ?>
         <?php the_post(); ?>

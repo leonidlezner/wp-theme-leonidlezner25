@@ -1,4 +1,4 @@
-<footer class="pt-10">
+<footer class="mt-10 border-t-8 border-color4">
     <div class="bg-color1">
         <?php get_template_part("src/layout/container", "begin"); ?>
         <div class="flex-col-reverse items-center md:flex-row md:justify-between flex py-12 space-y-4 md:space-y-0 space-y-reverse">

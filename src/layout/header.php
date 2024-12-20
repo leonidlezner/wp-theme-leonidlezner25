@@ -1,4 +1,4 @@
-<header class="pb-10 lg:pb-12">
+<header class="pb-8 md:pb-12 lg:pb-20">
   <div class="bg-color1" x-data="{ open: false }" @click.outside="open = false" @resize.window="open = false">
     <?php get_template_part("src/layout/container", "begin", ['class' => 'flex justify-between']); ?>
 
