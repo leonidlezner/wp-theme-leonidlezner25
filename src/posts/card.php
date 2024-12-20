@@ -5,7 +5,7 @@
     </a>
   </div>
 
-  <div class="space-y-3">
+  <div class="space-y-3 sm:flex-1">
     <?php the_title('<h2 class="font-heading font-bold text-3xl"><a href="' . esc_url(get_permalink()) . '" class="text-color3 hover:text-color2 hover:underline" rel="bookmark">', '</a></h2>'); ?>
 
     <?php get_template_part('src/posts/meta'); ?>
