@@ -11,8 +11,6 @@ if ($recent_comments) : ?>
       <h2 class="text-xl text-color2 font-bold font-heading mb-3"><?php lang("Last comments"); ?></h2>
 
       <ul class="space-y-5">
-
-
         <?php foreach ($recent_comments as $comment) : ?>
           <li>
             <div class="flex space-x-3">

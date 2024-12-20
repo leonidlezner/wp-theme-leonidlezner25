@@ -11,7 +11,7 @@
 
 <?php if (have_posts()) : ?>
   <div class="grid grid-cols-7 gap-7">
-    <div class="col-span-7 lg:col-span-5 grid grid-cols-subgrid space-y-12">
+    <div class="col-span-7 lg:col-span-5 space-y-12">
       <!-- Listing of posts -->
       <?php while (have_posts()) : ?>
         <?php the_post(); ?>
@@ -27,7 +27,7 @@
       ?>
 
       <?php if ($pagination) : ?>
-        <div class="col-span-full lg:col-span-5">
+        <div class="">
           <?php echo $pagination; ?>
         </div>
       <?php endif; ?>
@@ -37,7 +37,6 @@
       <?php get_template_part('src/partials/categories-list'); ?>
       <?php get_template_part('src/partials/last-comments'); ?>
     </div>
-
   </div>
 <?php else : ?>
   <!-- Not found warning and search -->
