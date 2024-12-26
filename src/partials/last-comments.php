@@ -1,6 +1,6 @@
 <?php
 $recent_comments = get_comments(array(
-  'number'      => 5,
+  'number'      => 7,
   'status'      => 'approve',
   'type'        => 'comment'
 ));
@@ -16,7 +16,7 @@ if ($recent_comments) : ?>
             <div class="flex space-x-3">
               <div class="mt-1">
                 <div class="rounded-full overflow-hidden">
-                  <?php echo get_avatar($comment->comment_author_email, 40); ?>
+                  <?php echo get_avatar($comment, 40); ?>
                 </div>
               </div>
               <div class="flex-1">
