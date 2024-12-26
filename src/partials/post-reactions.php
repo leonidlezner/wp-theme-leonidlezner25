@@ -3,7 +3,11 @@
 $post_id = get_the_ID();
 
 $reactions = [
-  'reply' => get_comments_number(),
+  'reply' =>  get_comments(array(
+    'post_id' => $post_id,
+    'type' => 'Comment',
+    'count' => true
+  )),
   'boost' => get_comments(array(
     'post_id' => $post_id,
     'type' => 'Repost',
