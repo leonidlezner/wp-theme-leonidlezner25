@@ -1,3 +1,3 @@
-# Template for Blog of Leonid Lezner
+# Template for Blog of Johannes Starke
 
-By Leonid Lezner
+By Leonid Lezner & Johannes Starke
