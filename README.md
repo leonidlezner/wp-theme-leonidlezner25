@@ -1,3 +1,3 @@
-# Template for Blog of Johannes Starke
+# Template for Wordpress Blog
 
-By Leonid Lezner & Johannes Starke
+By Leonid Lezner
