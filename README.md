@@ -1,3 +1,3 @@
-# Template for Blog of Leonid Lezner
+# Template for Wordpress Blog
 
 By Leonid Lezner
