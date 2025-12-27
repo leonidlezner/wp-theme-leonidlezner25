@@ -1,9 +1,13 @@
 import { defineConfig } from "vite";
 import liveReload from "vite-plugin-live-reload";
+import mkcert from "vite-plugin-mkcert";
 
 export default ({ mode }) => {
   return defineConfig({
-    plugins: [liveReload(["src/**/*.php", "src/**/*.css", "src/**/*.js"])],
+    plugins: [
+      liveReload(["src/**/*.php", "src/**/*.css", "src/**/*.js"]),
+      mkcert(),
+    ],
 
     publicDir: "public",
 
