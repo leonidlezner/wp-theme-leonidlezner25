@@ -1,4 +1,4 @@
-<div class="post-meta flex items-center justify-between text-color3">
+<div class="post-meta flex items-center justify-between text-gray-500 text-sm">
   <div class="flex-1 flex flex-wrap items-center">
     <div class="mr-1">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -6,13 +6,10 @@
       </svg>
     </div>
     <div class="mr-1">
-      <?php printf(
-        get_lang('%s in'),
-        get_the_date('d.m.Y'),
-      ); ?>
+      <?php printf(get_lang("%s in"), get_the_date("d.m.Y")); ?>
     </div>
     <div class="mr-1">
-      <?php the_category(', '); ?>
+      <?php the_category(", "); ?>
     </div>
   </div>
 </div>
