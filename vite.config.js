@@ -14,6 +14,10 @@ export default ({ mode }) => {
     server: {
       host: "localhost",
       open: process.env.VITE_SITE_URL,
+      
+      cors: {
+        origin: /https?:\/\/([A-Za-z0-9\-\.]+)?(\.dev|\.test)(?::\d+)?$/,
+      },
     },
 
     build: {
